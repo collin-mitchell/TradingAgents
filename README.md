@@ -112,6 +112,28 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
+### GitHub Codespace (Recommended for Quick Start)
+
+The easiest way to get started is using GitHub Codespaces, which provides a pre-configured development environment:
+
+1. **Open in Codespace**: Click the "Code" button on the GitHub repository and select "Open with Codespaces"
+2. **Set up environment variables**: Copy the example environment file and add your API keys:
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your API keys
+   ```
+3. **Install dependencies**: The codespace will automatically install dependencies via the postCreateCommand, but you can also run:
+   ```bash
+   pip install -e .
+   ```
+
+The codespace comes pre-configured with:
+- Python 3.10 environment
+- All necessary VS Code extensions for Python development
+- Automatic dependency installation
+- Environment variable configuration
+- Debug configurations for easy testing
+
 ### Required APIs
 
 You will also need the FinnHub API for financial data. All of our code is implemented with the free tier.
